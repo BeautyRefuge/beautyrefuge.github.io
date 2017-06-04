@@ -1,0 +1,46 @@
+{
+  "name": "beautyrefugesalon.com",
+  "version": "0.1.0",
+  "description": "static site generator for beautyrefugesalon.com",
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "main": "app/server.js",
+  "scripts": {
+    "start": "npm run watch",
+    "lint": "eslint app/** build.js",
+    "test": "npm run lint",
+    "build": "node build.js",
+    "uglify-js": "uglifyjs app/js/index.js -o public/js/index.js",
+    "less-css": "lessc --clean-css app/styles/index.less public/css/style.css",
+    "watch": "nodemon app/server.js & npm run watch-css & npm run watch-js",
+    "watch-css": "nodemon --ext less --watch app/styles --exec 'npm run less-css'",
+    "watch-js": "nodemon --watch app/js --exec 'npm run uglify-js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BeautyRefuge/beautyrefuge.github.io.git"
+  },
+  "author": {
+    "name": "Greg Jopa",
+    "email": "grjopa@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "koa": "2.2.0",
+    "koa-favicon": "2.0.0",
+    "koa-hbs": "1.0.0",
+    "koa-logger": "3.0.0",
+    "koa-router": "7.2.0",
+    "koa-static": "3.0.0",
+    "less": "2.7.2",
+    "less-plugin-clean-css": "1.5.1",
+    "shelljs": "0.7.7",
+    "supertest": "3.0.0",
+    "uglify-js": "3.0.15"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "nodemon": "1.11.0"
+  }
+}
