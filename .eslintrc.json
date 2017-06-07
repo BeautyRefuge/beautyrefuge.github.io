@@ -9,6 +9,6 @@
     "ecmaVersion": 2017
   },
   "globals": {
-    "$": true
+    "$": false
   }
 }
