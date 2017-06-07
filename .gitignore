@@ -3,6 +3,7 @@
 
 # compiled output
 /dist
+/deploy
 
 # misc
 npm-debug.log*
