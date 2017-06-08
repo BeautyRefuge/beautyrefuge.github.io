@@ -28,7 +28,7 @@ var app = {
 
   createBookingWidget: function () {
 
-    if (document.location.pathname !== '/book-appointment') {
+    if (document.location.pathname.indexOf('/book-appointment') === -1) {
       return;
     }
 

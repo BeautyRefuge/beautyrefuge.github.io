@@ -10,6 +10,7 @@
     "start": "npm run watch",
     "lint": "eslint app/** build.js",
     "test": "npm run lint",
+    "deploy": "npm run build & node deploy.js",
     "build": "node build.js",
     "uglify-js": "uglifyjs app/js/index.js -o public/js/index.js",
     "less-css": "lessc --clean-css app/styles/index.less public/css/style.css",

@@ -9,7 +9,7 @@ shell.mkdir('dist');
 // copy static assets
 shell.exec('npm run less-css & npm run uglify-js');
 shell.cp('-R', 'public/*', 'dist');
-shell.mv('public/images/favicon.ico', 'public');
+shell.cp('public/images/favicon.ico', 'public');
 
 const routes = [
   '/',
