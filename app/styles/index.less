@@ -37,10 +37,6 @@ a {
 
 .page-content {
   max-width: 800px;
-  table {
-    max-width: 370px;
-    margin-bottom: 30px;
-  }
 }
 
 
@@ -77,6 +73,22 @@ a {
   padding-left: 0;
 }
 
+.table.table-menu {
+
+  font-size: 18px;
+  max-width: 350px;
+  margin-bottom: 30px;
+
+  & > tbody > tr > td {
+    border-bottom: 1px solid @gray-lighter;
+    padding-bottom: 0;
+    padding-top: 16px;
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+}
 
 .instagram-feed {
   min-height: 300px;
