@@ -8,6 +8,7 @@
   "main": "app/server.js",
   "scripts": {
     "start": "npm run watch",
+    "start-prod": "npm run build && http-server dist -p 3111 -a localhost -o",
     "lint": "eslint app/** build.js",
     "test": "npm run lint",
     "deploy": "npm run build && node deploy.js",
@@ -42,6 +43,7 @@
   },
   "devDependencies": {
     "eslint": "3.19.0",
+    "http-server": "0.10.0",
     "nodemon": "1.11.0"
   }
 }
