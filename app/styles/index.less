@@ -162,15 +162,29 @@ section {
     font-size: 18px;
   }
 
+  .carousel-indicators {
+    margin: 0;
+    margin-bottom: 15px;
+    position: static;
+    width: 100%;
+    li {
+      border: 1px solid @blush;
+      &.active {
+        background-color: @blush;
+      }
+    }
+  }
+
   .item {
-    min-height: 160px;
+    min-height: 140px;
     blockquote {
       margin: 20px;
     }
   }
 
   .glyphicon-menu-left, .glyphicon-menu-right {
-    font-size: 22px;
+    color: @blush;
+    font-size: 28px;
     padding: 0 4px;
   }
 
