@@ -45,10 +45,10 @@ section {
 
 .full-bg-image-wrapper {
   position: relative;
-  height: 250px;
-  @media (min-width: 768px) {
+  height: 350px;
+  @media (max-width: 768px) {
     & {
-      height: 350px !important;
+      height: 250px !important;
     }
   }
 
@@ -176,9 +176,14 @@ section {
   }
 
   .item {
-    min-height: 140px;
+    min-height: 170px;
     blockquote {
       margin: 20px;
+    }
+    @media (max-width: 768px) {
+      & {
+       min-height: 270px;
+      }
     }
   }
 
