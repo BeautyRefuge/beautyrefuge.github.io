@@ -18,6 +18,10 @@ a {
   &:hover {
     color: @gray;
   }
+  .glyphicon-menu-right {
+    font-size: 10px;
+    margin-left: 3px;
+  }
 }
 
 .btn-primary {
@@ -138,6 +142,15 @@ section {
 
 }
 
+.quote {
+  margin: 20px 0;
+  @media (max-width: 768px) {
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
 
 #booking-widget {
   min-height: 300px;
@@ -197,4 +210,28 @@ section {
     text-decoration: none;
   }
 
+}
+
+#services-widget {
+  margin: 20px 0;
+
+  .svg-container {
+    background-color: @blush;
+    border-radius: 500px;
+    margin: 30px auto 10px auto;
+    padding: 25px;
+    text-align: center;
+    width: 105px;
+  }
+
+  svg {
+    fill: @gray;
+    width: 50px;
+    height: 50px;
+  }
+
+  .content {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
