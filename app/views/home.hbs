@@ -2,22 +2,34 @@
   <div class="full-bg-image"></div>
 </div>
 
-<div class="container">
-  <section class="quote">
-  <blockquote class="text-right">
-    <p>"People will stare. Make it worth their while."<br>
-    -Harry Winston</p>
-  </blockquote>
-  </section>
 
-  <section id="services-widget">
+<div class="quote">
+  <div class="container">
+    <blockquote class="text-right">
+      <p>"People will stare. Make it worth their while."<br>
+      -Harry Winston</p>
+    </blockquote>
+  </div>
+</div>
+
+
+<section id="location-widget">
+  <div class="container">
+    <h2>Beauty Refuge</h2>
+    <p>A single chair suite, with vintage glam style and a comfortable atmosphere.</p>
+    {{> address}}
+  </div>
+</section>
+
+
+<section id="services-widget">
+  <div class="container">
     <div class="row">
 
       <div class="col-md-3">
         <h2>Our Expertise</h2>
-        <p>Beauty Refuge specializes in custom color, hair extensions, and balayage. Other services
-          include women and men's haircuts, foil highlighting, keratin treatments and
-          Brazilian Blowouts.</p>
+        <p>Beauty Refuge specializes in color, extensions, and styling. Our services include
+          balayage, foil highlighting, keratin treatments, Brazilian Blowouts and more.</p>
         <a href="/services" class="read-more">Learn More
           <span class="glyphicon glyphicon-menu-right"></span></a>
       </div>
@@ -47,9 +59,8 @@
         </div>
       </div>
     </div>
-  </section>
-
-</div>
+  </div>
+</section>
 
 
 {{> reviews}}
