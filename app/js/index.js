@@ -41,7 +41,15 @@ var app = {
       return;
     }
 
-    var html = '';
+    var numColumns = 6;
+    var columnClass = 'col-xs-2';
+
+    if ($container.width() < 480) {
+      numColumns = 3;
+      columnClass = 'col-xs-4';
+    }
+
+    var html = '<div class="row">';
 
     return $.ajax({
       url: 'https://api.instagram.com/v1/' + options.path,
@@ -65,6 +73,13 @@ var app = {
           title = subString.substr(0, subString.lastIndexOf(' ')) + '...';
         }
 
+        if (index === 0 || index % numColumns !== 0) {
+          html += '<div class="' + columnClass + '">';
+        }
+        else {
+          html += '</div><div class="row"><div class="' + columnClass + '">';
+        }
+
         if (photo.type === 'image') {
           html += '<a href="' + img.url + '"';
         }
@@ -75,10 +90,13 @@ var app = {
 
         html += ' title="' + title + '" data-gallery="' + options.blueimpContainer + '">' +
           '<img src="' + thumbnail.url + '" width="' + thumbnail.width +
-          '" height="' + thumbnail.height + '"></img></a>';
+          '" height="' + thumbnail.height + '" class="img-responsive"></img></a></div>';
+
+        if (index === media.data.length -1) {
+          html += '</div>';
+        }
 
       });
-
       $container.html(html);
     })
     .fail(function () {
