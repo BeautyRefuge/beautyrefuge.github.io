@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "static site generator for beautyrefugesalon.com",
   "engines": {
-    "node": ">=8.1.0"
+    "node": ">=8"
   },
   "main": "app/server.js",
   "scripts": {

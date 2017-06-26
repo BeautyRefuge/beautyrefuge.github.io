@@ -47,11 +47,9 @@ section {
 }
 
 .full-bg-image-wrapper {
-  background-color: @blush-light;
-  background: linear-gradient(to bottom, @blush-light, @white);
 
   position: relative;
-  height: 600px;
+  height: 550px;
 
   @media (max-width: 768px) {
     & {
@@ -94,14 +92,6 @@ section {
     &:last-child {
       text-align: right;
     }
-  }
-}
-
-.instagram-feed {
-  min-height: 300px;
-  img {
-    padding: 2px;
-    width: 100px;
   }
 }
 
@@ -154,6 +144,9 @@ section {
   }
 }
 
+.address {
+  margin-bottom: 20px;
+}
 
 #booking-widget {
   min-height: 300px;
@@ -238,13 +231,38 @@ section {
 #location-widget {
   font-size: 20px;
   margin-top: 0;
-  address {
+
+  .address {
     margin: 20px 0;
   }
 
   @media (max-width: 768px) {
     & {
       font-size: 16px;
+    }
+  }
+}
+
+
+#footer-instagram-feed, #gallery-instagram-feed {
+  min-height: 300px;
+  img {
+    background-color: @gray-lighter;
+    margin: 4px;
+    padding: 1px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+#footer-instagram-feed img {
+  width: 110px;
+  height: 110px;
+
+  @media (max-width: 375px) {
+    & {
+      width: 90px;
+      height: 90px;
     }
   }
 }
