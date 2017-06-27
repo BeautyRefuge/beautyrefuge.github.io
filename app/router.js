@@ -37,3 +37,10 @@ router.get('/book-appointment', async ctx => {
     description: meta.bookAppointment.description
   });
 });
+
+router.get('/404', async ctx => {
+  await ctx.render('404', {
+    title: meta.error404.title,
+    description: meta.error404.description
+  });
+});

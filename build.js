@@ -16,7 +16,8 @@ const routes = [
   '/services',
   '/gallery',
   '/contact',
-  '/book-appointment'
+  '/book-appointment',
+  '/404'
 ];
 
 // create an array of promises
@@ -34,6 +35,9 @@ const requests = routes.map(route => {
 
       if (route === '/') {
         shell.ShellString(html).to(`dist/index.html`);
+      }
+      else if (route === '/404') {
+        shell.ShellString(html).to(`dist/404.html`);
       }
       else {
         shell.mkdir(`dist${route}`);

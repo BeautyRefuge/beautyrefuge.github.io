@@ -24,5 +24,9 @@ module.exports = {
   bookAppointment: {
     title: `Book Appointment ${baseTitle}`,
     description: 'Book an appointment at Beauty Refuge using the Vagaro Book 24/7 widget.'
+  },
+  error404: {
+    title: `404 Page Not Found ${baseTitle}`,
+    description: 'Page not found'
   }
 };
