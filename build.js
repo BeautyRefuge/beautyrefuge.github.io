@@ -1,4 +1,5 @@
 const shell = require('shelljs');
+const minify = require('html-minifier').minify;
 const request = require('supertest');
 const app = require('./app/server');
 
@@ -25,12 +26,18 @@ const requests = routes.map(route => {
     .get(route)
     .expect(200)
     .then(res => {
+
+      const html = minify(res.text, {
+        collapseWhitespace: true,
+        minifyJS: true
+      });
+
       if (route === '/') {
-        shell.ShellString(res.text).to(`dist/index.html`);
+        shell.ShellString(html).to(`dist/index.html`);
       }
       else {
         shell.mkdir(`dist${route}`);
-        shell.ShellString(res.text).to(`dist/${route}/index.html`);
+        shell.ShellString(html).to(`dist/${route}/index.html`);
       }
     });
 });
