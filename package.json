@@ -13,8 +13,8 @@
     "test": "npm run lint",
     "deploy": "npm run build && node deploy.js",
     "build": "node build.js",
-    "uglify-js": "uglifyjs app/js/index.js -o public/js/index.js",
     "less-css": "lessc --clean-css app/styles/index.less public/css/style.css",
+    "uglify-js": "uglifyjs node_modules/bootstrap/dist/js/bootstrap.js app/js/index.js -o public/js/index.js",
     "watch": "nodemon app/server.js & npm run watch-css & npm run watch-js",
     "watch-css": "nodemon --ext less --watch app/styles --exec 'npm run less-css'",
     "watch-js": "nodemon --watch app/js --exec 'npm run uglify-js'"
@@ -29,6 +29,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "3.3.7",
     "date-fns": "1.28.5",
     "html-minifier": "3.5.2",
     "koa": "2.3.0",
