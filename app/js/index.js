@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+  // add css for gallery widget
+  var cssUrl = 'https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.25.2/css/' +
+    'blueimp-gallery.min.css';
+  $('head').append('<link rel="stylesheet" href="' + cssUrl + '">');
+
   app.getInstagramPhotos({
     container: '#footer-instagram-feed',
     blueimpContainer: '#blueimp-gallery-footer',
