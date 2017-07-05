@@ -6,8 +6,8 @@ $(document).ready(function () {
   $('head').append('<link rel="stylesheet" href="' + cssUrl + '">');
 
   app.getInstagramPhotos({
-    container: '#footer-instagram-feed',
-    blueimpContainer: '#blueimp-gallery-footer',
+    container: '.footer .instagram-feed',
+    blueimpContainer: '.blueimp-gallery-footer',
     path: 'users/self/media/recent',
     count: 9
   });
@@ -15,8 +15,8 @@ $(document).ready(function () {
 
   if (app.isPage('/gallery')) {
     app.getInstagramPhotos({
-      container: '#gallery-instagram-feed',
-      blueimpContainer: '#blueimp-gallery-full-page',
+      container: '.gallery .instagram-feed',
+      blueimpContainer: '.blueimp-gallery-full-page',
       path: 'tags/beautyrefugegallery/media/recent',
       count: 30
     });
@@ -114,7 +114,7 @@ var app = {
 
   createBookingWidget: function () {
 
-    var $bookingWidget = $('#booking-widget');
+    var $bookingWidget = $('.booking-widget');
     var $spinner = $bookingWidget.find('.loading-spinner');
     var isMobile = /iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent);
 
