@@ -31,6 +31,7 @@
   "dependencies": {
     "bootstrap": "3.3.7",
     "date-fns": "1.28.5",
+    "fontfaceobserver": "2.0.13",
     "html-minifier": "3.5.2",
     "koa": "2.3.0",
     "koa-favicon": "2.0.0",
