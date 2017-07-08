@@ -1,6 +1,6 @@
 {
-  "name": "beautyrefugesalon.com",
-  "version": "0.1.0",
+  "name": "beautyrefuge.github.io",
+  "version": "1.0.0",
   "description": "static site generator for beautyrefugesalon.com",
   "engines": {
     "node": ">=8"
@@ -31,8 +31,10 @@
   "dependencies": {
     "bootstrap": "3.3.7",
     "date-fns": "1.28.5",
+    "eslint": "4.1.1",
     "fontfaceobserver": "2.0.13",
     "html-minifier": "3.5.2",
+    "http-server": "0.10.0",
     "koa": "2.3.0",
     "koa-favicon": "2.0.0",
     "koa-hbs": "1.0.0",
@@ -41,13 +43,9 @@
     "koa-static": "3.0.0",
     "less": "2.7.2",
     "less-plugin-clean-css": "1.5.1",
+    "nodemon": "1.11.0",
     "shelljs": "0.7.8",
     "supertest": "3.0.0",
     "uglify-js": "3.0.20"
-  },
-  "devDependencies": {
-    "eslint": "4.1.1",
-    "http-server": "0.10.0",
-    "nodemon": "1.11.0"
   }
 }
