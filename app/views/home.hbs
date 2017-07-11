@@ -13,9 +13,26 @@
 
 <section class="location-widget">
   <div class="container">
-    <h2>Beauty Refuge</h2>
-    <p>A single chair suite, with rustic boho style and a comfortable atmosphere.</p>
-    {{> address}}
+    <div class="row">
+
+      <div class="col-md-6">
+        <h2>Beauty Refuge</h2>
+        <p>A single chair suite, with rustic boho style and a comfortable atmosphere.</p>
+        {{> address}}
+      </div>
+
+      <div class="col-md-6">
+        <div class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
+          <div class="slides"></div>
+          <h3 class="title"></h3>
+          <a class="prev">‹</a>
+          <a class="next">›</a>
+          <a class="play-pause"></a>
+          <ol class="indicator"></ol>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 

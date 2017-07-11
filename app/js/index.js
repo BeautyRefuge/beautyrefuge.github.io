@@ -13,6 +13,11 @@ $(document).ready(function () {
   });
 
 
+  if (app.isPage('/')) {
+    app.createImageCarousel();
+  }
+
+
   if (app.isPage('/gallery')) {
     app.getInstagramPhotos({
       container: '.gallery .instagram-feed',
@@ -35,7 +40,16 @@ $(document).ready(function () {
 var app = {
 
   isPage: function (path) {
-    return document.location.pathname.indexOf(path) !== -1;
+
+    var pathname = document.location.pathname;
+
+    // home page
+    if (path === '/') {
+      return pathname === '/';
+    }
+
+    return pathname.indexOf(path) !== -1;
+
   },
 
 
@@ -144,6 +158,25 @@ var app = {
       $spinner.hide();
       $iframe.height(750).show();
     });
+
+  },
+
+
+  createImageCarousel: function () {
+
+    var images = [
+      '/images/beauty-refuge-back-wall.jpg',
+      '/images/beauty-refuge-front-wall.jpg',
+      '/images/beauty-refuge-shampoo-station.jpg'
+    ];
+
+    var options = {
+      container: '.blueimp-gallery-carousel',
+      carousel: true,
+      startSlideshow: false
+    };
+
+    blueimp.Gallery(images, options);
 
   }
 
