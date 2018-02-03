@@ -80,7 +80,13 @@ var app = {
       }
     })
     .done(function (media) {
+      var customIndex = 0;
+
       $.each(media.data, function (index, photo) {
+
+        if (photo.user.username !== 'beauty.refuge') {
+          return true;
+        }
 
         var img = photo.images.standard_resolution;
         var thumbnail = photo.images.thumbnail;
@@ -92,7 +98,7 @@ var app = {
           title = subString.substr(0, subString.lastIndexOf(' ')) + '...';
         }
 
-        if (index === 0 || index % numColumns !== 0) {
+        if (customIndex === 0 || customIndex % numColumns !== 0) {
           html += '<div class="' + columnClass + '">';
         }
         else {
@@ -115,6 +121,7 @@ var app = {
           html += '</div>';
         }
 
+        customIndex++;
       });
       $container.html(html);
     })
