@@ -7,6 +7,7 @@
     "email": "grjopa@gmail.com"
   },
   "dependencies": {
+    "better-react-spinkit": "2.0.4",
     "bootstrap": "4.0.0",
     "gatsby": "^1.9.202",
     "gatsby-link": "^1.6.37",
