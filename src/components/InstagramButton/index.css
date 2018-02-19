@@ -1,0 +1,20 @@
+.btn-instagram {
+  margin-bottom: 30px;
+  padding: 10px 12px;
+  fill: #fff;
+}
+
+.btn-instagram svg {
+  display: inline-block;
+  margin-left: -4px;
+  margin-top: -4px;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.btn-instagram span {
+  font-size: 14px;
+  margin-left: 5px;
+  text-transform: uppercase;
+}

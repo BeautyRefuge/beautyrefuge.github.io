@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Gallery from '../components/Gallery';
+import InstagramButton from '../components/InstagramButton';
 
 export default () => (
   <div className="page-gallery" style={{ minHeight: '400px' }}>
@@ -16,6 +17,7 @@ export default () => (
       ]}
     />
     <h1>Photo Gallery</h1>
+    <InstagramButton />
     <Gallery path="tags/beautyrefugegallery/media/recent" count="50" />
   </div>
 );
