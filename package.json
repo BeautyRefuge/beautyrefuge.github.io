@@ -7,10 +7,12 @@
     "email": "grjopa@gmail.com"
   },
   "dependencies": {
+    "bootstrap": "4.0.0",
     "gatsby": "^1.9.202",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-react-helmet": "^2.0.5",
     "react-helmet": "^5.2.0",
+    "reactstrap": "5.0.0-beta",
     "typeface-lato": "0.0.54",
     "typeface-montserrat": "0.0.54"
   },

@@ -3,28 +3,29 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import Header from '../components/Header';
+import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
+
+require('typeface-montserrat');
+require('typeface-lato');
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Beauty Refuge - Full Service Salon - Oakbrook Terrace, IL"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        {
+          name: 'description',
+          content:
+            'Hair design and color services in the Chicagoland area. Beauty Refuge is ' +
+            'a full service salon that brings out the inner beauty in each and every client.',
+        },
       ]}
-    />
-    <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
     >
-      {children()}
-    </div>
+      <html lang="en" />
+    </Helmet>
+    <Header />
+    <div className="container">{children()}</div>
   </div>
 );
 
