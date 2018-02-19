@@ -1,0 +1,65 @@
+body {
+  padding-top: 62px;
+}
+
+.navbar-light {
+  background-color: #f7e2dc;
+}
+
+.navbar-light .navbar-brand {
+  padding: 0;
+}
+
+.navbar-light .navbar-brand img {
+  margin: 0;
+}
+
+.navbar-light .navbar-nav .nav-item {
+  margin-bottom: 0;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+  color: #606060;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  padding: 8px 20px;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:active,
+.navbar-light .navbar-nav .nav-item .nav-link:focus,
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item .nav-link.btn-primary:active,
+.navbar-light .navbar-nav .nav-item .nav-link.btn-primary:focus,
+.navbar-light .navbar-nav .nav-item .nav-link.btn-primary:hover {
+  color: #000;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link.btn-primary {
+  color: #fff;
+  margin-left: 20px;
+}
+
+@media (max-width: 992px) {
+  .navbar-light .navbar-nav .nav-item .nav-link {
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-light .navbar-nav {
+    padding-top: 20px;
+  }
+
+  .navbar-light .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .navbar-light .navbar-nav .nav-item .nav-link.btn-primary {
+    border-radius: 0;
+    margin-left: 0;
+    margin: 20px 0;
+    padding: 8px 20px;
+  }
+}
