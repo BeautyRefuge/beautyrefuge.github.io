@@ -1,0 +1,76 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-gallery-js": [
+      "component---src-pages-gallery-js-f3e2d67d42b3147a47c6.js",
+      "component---src-pages-gallery-js-f3e2d67d42b3147a47c6.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-e45198e22cf52b9ebb82.js",
+      "component---src-pages-index-js-e45198e22cf52b9ebb82.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "component---src-pages-contact-js": [
+      "component---src-pages-contact-js-380d15c4a33d9328b157.js",
+      "component---src-pages-contact-js-380d15c4a33d9328b157.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-c896aafbbc3493009d95.js",
+      "component---src-layouts-index-js-c896aafbbc3493009d95.js.map"
+    ],
+    "path---gallery": [
+      "path---gallery-a0e39f21c11f6a62c5ab.js",
+      "path---gallery-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "commons": [
+      "commons-8714145cd91a69b4c583.js",
+      "build-js-styles.css",
+      "commons-8714145cd91a69b4c583.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---book-appointment": [
+      "path---book-appointment-a0e39f21c11f6a62c5ab.js",
+      "path---book-appointment-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-book-appointment-js": [
+      "component---src-pages-book-appointment-js-1b855bc7ccd7e4eb0186.js",
+      "component---src-pages-book-appointment-js-1b855bc7ccd7e4eb0186.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---contact": [
+      "path---contact-a0e39f21c11f6a62c5ab.js",
+      "path---contact-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "app": [
+      "app-1079e88109c66b93f2a2.js",
+      "build-js-styles.css",
+      "app-1079e88109c66b93f2a2.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---services": [
+      "path---services-a0e39f21c11f6a62c5ab.js",
+      "path---services-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-services-js": [
+      "component---src-pages-services-js-e9a74bd0e22230b277b5.js",
+      "component---src-pages-services-js-e9a74bd0e22230b277b5.js.map"
+    ]
+  }
+}
