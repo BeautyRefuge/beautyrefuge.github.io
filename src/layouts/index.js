@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 
@@ -26,6 +27,7 @@ const TemplateWrapper = ({ children }) => (
     </Helmet>
     <Header />
     <div className="container">{children()}</div>
+    <Footer />
   </div>
 );
 
