@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import favicon from './favicon.ico';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 
@@ -24,6 +25,7 @@ const TemplateWrapper = ({ children }) => (
       ]}
     >
       <html lang="en" />
+      <link rel="icon" href={favicon} />
     </Helmet>
     <Header />
     <div className="container">{children()}</div>
