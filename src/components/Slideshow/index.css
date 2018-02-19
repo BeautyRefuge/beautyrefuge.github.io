@@ -1,0 +1,7 @@
+.slideshow .react-blueimp-thumbnails {
+  display: none;
+}
+
+.blueimp-gallery-controls a:not([href]):not([tabindex]) {
+  color: #fff;
+}
