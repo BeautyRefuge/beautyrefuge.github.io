@@ -38,26 +38,25 @@ export default class Gallery extends Component {
           });
         }
 
-        const images = data
-          .map(item => {
-            let title = item.caption.text;
+        const images = data.map(item => {
+          let title = item.caption.text;
 
-            if (title.length > titleMaxLength) {
-              const subString = title.substr(0, titleMaxLength - 1);
-              title = subString.substr(0, subString.lastIndexOf(' ')) + '...';
-            }
+          if (title.length > titleMaxLength) {
+            const subString = title.substr(0, titleMaxLength - 1);
+            title = subString.substr(0, subString.lastIndexOf(' ')) + '...';
+          }
 
-            const image = {
-              source: item.images.standard_resolution.url,
-              thumbnail: item.images.thumbnail.url,
-              title,
-            };
-            if (item.type === 'video') {
-              image.source = item.videos.standard_resolution.url;
-              image.type = 'video/mp4';
-            }
-            return image;
-          });
+          const image = {
+            source: item.images.standard_resolution.url,
+            thumbnail: item.images.thumbnail.url,
+            title,
+          };
+          if (item.type === 'video') {
+            image.source = item.videos.standard_resolution.url;
+            image.type = 'video/mp4';
+          }
+          return image;
+        });
 
         this.setState({
           loaded: true,
