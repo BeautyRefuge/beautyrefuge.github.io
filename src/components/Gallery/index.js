@@ -72,7 +72,6 @@ export default class Gallery extends Component {
       });
   }
   componentWillUnmount() {
-    console.log('unmount');
     this.source.cancel('component is unmounted');
   }
   render() {
