@@ -18,6 +18,6 @@ export default () => (
     />
     <h1>Photo Gallery</h1>
     <InstagramButton />
-    <Gallery path="tags/beautyrefugegallery/media/recent" count="50" />
+    <Gallery count="33" tag="hair" />
   </div>
 );

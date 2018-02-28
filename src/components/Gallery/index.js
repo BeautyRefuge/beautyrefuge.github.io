@@ -21,7 +21,7 @@ export default class Gallery extends Component {
   }
   componentDidMount() {
     return axios
-      .get(`https://api.instagram.com/v1/${this.props.path}`, {
+      .get('https://api.instagram.com/v1/users/self/media/recent', {
         params: {
           access_token: '315310155.3a81a9f.092b90b913d34aafa72f8744cec91170',
           count: this.props.count,
@@ -29,13 +29,16 @@ export default class Gallery extends Component {
         cancelToken: this.source.token,
       })
       .then(response => {
-        const data = response.data.data;
+        let data = response.data.data;
         const titleMaxLength = 110;
 
+        if (this.props.tag) {
+          data = data.filter(item => {
+            return item.tags.indexOf(this.props.tag) !== -1;
+          });
+        }
+
         const images = data
-          .filter(item => {
-            return item.user.username === 'beauty.refuge';
-          })
           .map(item => {
             let title = item.caption.text;
 

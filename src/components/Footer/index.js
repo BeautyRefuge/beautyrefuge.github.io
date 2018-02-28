@@ -93,7 +93,7 @@ export default class Footer extends Component {
 
             <div className="col-lg-4">
               <h2>Instagram Feed</h2>
-              <Gallery path="users/self/media/recent" count="9" />
+              <Gallery count="9" />
             </div>
           </div>
         </div>
