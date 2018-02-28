@@ -16,6 +16,8 @@ export default class Gallery extends Component {
       loaded: false,
       images: [],
     };
+    const CancelToken = axios.CancelToken;
+    this.source = CancelToken.source();
   }
   componentDidMount() {
     return axios
@@ -24,6 +26,7 @@ export default class Gallery extends Component {
           access_token: '315310155.3a81a9f.092b90b913d34aafa72f8744cec91170',
           count: this.props.count,
         },
+        cancelToken: this.source.token,
       })
       .then(response => {
         const data = response.data.data;
@@ -57,7 +60,18 @@ export default class Gallery extends Component {
           loaded: true,
           images,
         });
+      })
+      .catch(err => {
+        if (axios.isCancel(err)) {
+          console.log('Request canceled', err.message);
+        } else {
+          console.log(err);
+        }
       });
+  }
+  componentWillUnmount() {
+    console.log('unmount');
+    this.source.cancel('component is unmounted');
   }
   render() {
     if (this.state.loaded) {
