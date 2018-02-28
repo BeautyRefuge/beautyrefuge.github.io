@@ -23,6 +23,6 @@ export default () => (
       Book your appointment online now! Use this Vagaro booking widget to find
       an appointment that works for you.
     </p>
-    <Iframe src={url} width="100%" height="650px" />
+    <Iframe src={url} width="100%" height="1000px" />
   </div>
 );
