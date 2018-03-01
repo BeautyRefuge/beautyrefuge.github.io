@@ -6,6 +6,10 @@
     "name": "Greg Jopa",
     "email": "grjopa@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeautyRefuge/beautyrefuge.github.io.git"
+  },
   "dependencies": {
     "axios": "0.18.0",
     "better-react-spinkit": "2.0.4",
