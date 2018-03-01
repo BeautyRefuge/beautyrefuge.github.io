@@ -7,12 +7,12 @@
     "email": "grjopa@gmail.com"
   },
   "dependencies": {
-    "axios": "0.17.1",
+    "axios": "0.18.0",
     "better-react-spinkit": "2.0.4",
     "bootstrap": "4.0.0",
     "gatsby": "^1.9.202",
     "gatsby-link": "^1.6.37",
-    "gatsby-plugin-google-analytics": "1.0.19",
+    "gatsby-plugin-google-analytics": "1.0.20",
     "gatsby-plugin-react-helmet": "^2.0.5",
     "react-helmet": "^5.2.0",
     "reactive-blueimp-gallery": "0.2.0",
