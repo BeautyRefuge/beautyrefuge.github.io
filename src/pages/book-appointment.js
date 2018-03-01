@@ -26,7 +26,10 @@ export default () => (
 
     {isMobile ? (
       <div>
-        <p>Click the following button to book your appointment online using Vagaro:</p>
+        <p>
+          Click the following button to book your appointment online using
+          Vagaro:
+        </p>
         <a
           href="https://www.vagaro.com/beautyrefuge/book-now"
           target="_blank"
@@ -38,11 +41,11 @@ export default () => (
       </div>
     ) : (
       <div>
-      <p>
-        Book your appointment online now! Use this Vagaro booking widget to find
-        an a ppointment that works for you.
-      </p>
-      <Iframe src={url} width="100%" height="1000px" />
+        <p>
+          Book your appointment online now! Use this Vagaro booking widget to
+          find an a ppointment that works for you.
+        </p>
+        <Iframe src={url} width="100%" height="1000px" />
       </div>
     )}
   </div>
