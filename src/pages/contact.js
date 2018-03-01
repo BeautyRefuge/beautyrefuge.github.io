@@ -25,15 +25,17 @@ export default () => (
           schedule an appointment, ask a question, or just say hi!
         </p>
       </div>
-      <div
-        className="col-md-8"
-        style={{ minHeight: '400px', border: '1px solid #eee' }}
-      >
-        <Iframe
-          src="https://gregjopa.wufoo.com/embed/rzw3z4t182ay77/def/&header=hide"
-          width="100%"
-          height="500px"
-        />
+      <div className="col-md-8">
+        <div className="alert alert-danger" role="alert">
+          Beauty Refuge is not accepting any new clients at the moment.
+        </div>
+        <div style={{ minHeight: '400px', border: '1px solid #eee' }}>
+          <Iframe
+            src="https://gregjopa.wufoo.com/embed/rzw3z4t182ay77/def/&header=hide"
+            width="100%"
+            height="500px"
+          />
+        </div>
       </div>
     </div>
   </div>
