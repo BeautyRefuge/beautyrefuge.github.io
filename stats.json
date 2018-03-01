@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-gallery-js": [
-      "component---src-pages-gallery-js-1675c19843ce58fff80a.js",
-      "component---src-pages-gallery-js-1675c19843ce58fff80a.js.map"
+      "component---src-pages-gallery-js-51022f7dbcffcefb6f2d.js",
+      "component---src-pages-gallery-js-51022f7dbcffcefb6f2d.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-e45198e22cf52b9ebb82.js",
@@ -13,12 +13,12 @@
       "path----557518bd178906f8d58a.js.map"
     ],
     "component---src-pages-contact-js": [
-      "component---src-pages-contact-js-380d15c4a33d9328b157.js",
-      "component---src-pages-contact-js-380d15c4a33d9328b157.js.map"
+      "component---src-pages-contact-js-89b630dff04cbc12adce.js",
+      "component---src-pages-contact-js-89b630dff04cbc12adce.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-4f9f24fcaaa35ebee0a3.js",
-      "component---src-layouts-index-js-4f9f24fcaaa35ebee0a3.js.map"
+      "component---src-layouts-index-js-c143726bb92dd7fcda3a.js",
+      "component---src-layouts-index-js-c143726bb92dd7fcda3a.js.map"
     ],
     "path---gallery": [
       "path---gallery-a0e39f21c11f6a62c5ab.js",
@@ -43,8 +43,8 @@
       "path---book-appointment-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-book-appointment-js": [
-      "component---src-pages-book-appointment-js-5fdc6e0d5d7a5407c161.js",
-      "component---src-pages-book-appointment-js-5fdc6e0d5d7a5407c161.js.map"
+      "component---src-pages-book-appointment-js-bc08993872282c29af79.js",
+      "component---src-pages-book-appointment-js-bc08993872282c29af79.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
