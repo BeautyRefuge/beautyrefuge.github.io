@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Gallery from '../Gallery';
+import FooterGallery from '../Gallery/footer-widget';
 import './index.css';
 
 const address = (
@@ -93,7 +93,7 @@ export default class Footer extends Component {
 
             <div className="col-lg-4">
               <h2>Instagram Feed</h2>
-              <Gallery count="9" />
+              <FooterGallery />
             </div>
           </div>
         </div>

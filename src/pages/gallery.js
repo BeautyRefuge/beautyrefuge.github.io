@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Gallery from '../components/Gallery';
+import MainGallery from '../components/Gallery/main-widget';
 import InstagramButton from '../components/InstagramButton';
 
 export default () => (
@@ -18,6 +18,6 @@ export default () => (
     />
     <h1>Photo Gallery</h1>
     <InstagramButton />
-    <Gallery count="33" tag="hair" />
+    <MainGallery />
   </div>
 );
