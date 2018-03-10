@@ -14,6 +14,7 @@
     "axios": "0.18.0",
     "better-react-spinkit": "2.0.4",
     "bootstrap": "4.0.0",
+    "core-js": "2.5.3",
     "gatsby": "^1.9.202",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-google-analytics": "1.0.22",

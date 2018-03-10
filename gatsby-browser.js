@@ -1,7 +1,21 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+exports.onClientEntry = () => {
+  require('core-js/fn/object/assign');
 
- // You can delete this file if you're not using it
+  // source: https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent
+  (function () {
+
+    if ( typeof window.CustomEvent === "function" ) return false;
+
+    function CustomEvent ( event, params ) {
+      params = params || { bubbles: false, cancelable: false, detail: undefined };
+      var evt = document.createEvent( 'CustomEvent' );
+      evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+      return evt;
+     }
+
+    CustomEvent.prototype = window.Event.prototype;
+
+    window.CustomEvent = CustomEvent;
+  })();
+
+}
