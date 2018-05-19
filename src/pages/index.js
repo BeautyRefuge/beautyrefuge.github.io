@@ -8,7 +8,7 @@ import Reviews from '../components/Reviews';
 export default () => (
   <div>
     <div className="row" style={{ marginTop: '20px' }}>
-      <div className="col-md-5">
+      <div className="col-md-6">
         <h2>Beauty Refuge</h2>
         <p>
           A single chair suite, with rustic boho style and a comfortable
@@ -30,7 +30,7 @@ export default () => (
           </a>
         </p>
       </div>
-      <div className="col-lg-7">
+      <div className="col-lg-6">
         <Slideshow />
       </div>
     </div>

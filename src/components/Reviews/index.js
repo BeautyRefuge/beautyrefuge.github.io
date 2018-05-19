@@ -125,7 +125,7 @@ class Reviews extends Component {
     });
 
     return (
-      <div>
+      <div className="reviews-container">
         <h2>Client Reviews</h2>
         <Carousel
           activeIndex={activeIndex}

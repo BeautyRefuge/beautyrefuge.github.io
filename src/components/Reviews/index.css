@@ -8,8 +8,7 @@
   position: static;
   width: 100%;
 } */
-
-.review {
+.reviews-container .review {
   margin: 20px 15% 100px 15%;
   /* min-height: 200px; */
 }
@@ -20,18 +19,18 @@
   }
 } */
 
-.carousel-indicators li {
+.reviews-container .carousel-indicators li {
   background-color: #f7e2dc;
 }
 
-.carousel-indicators li.active {
+.reviews-container .carousel-indicators li.active {
   background-color: #ed8c8c;
 }
 
-.carousel-control-next-icon {
+.reviews-container .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ed8c8c' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
-.carousel-control-prev-icon {
+.reviews-container .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ed8c8c' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }

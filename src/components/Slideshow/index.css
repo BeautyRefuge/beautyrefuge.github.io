@@ -1,7 +1,11 @@
-.slideshow .react-blueimp-thumbnails {
-  display: none;
+.slideshow-container {
+  box-shadow: 0 0 10px #000;
+  min-height: 250px;
+  max-width: 450px;
 }
 
-.blueimp-gallery-controls a:not([href]):not([tabindex]) {
-  color: #fff;
+.center-content {
+  display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }

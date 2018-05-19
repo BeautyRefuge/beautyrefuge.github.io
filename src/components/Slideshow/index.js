@@ -1,52 +1,111 @@
 import React, { Component } from 'react';
-
-let ReactGallery;
-// hack for getting ReactGallery to work with SSR
-if (typeof window !== 'undefined') {
-  ReactGallery = require('reactive-blueimp-gallery').default;
-}
+import {
+  Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicators,
+  CarouselCaption,
+} from 'reactstrap';
 
 import './index.css';
 import frontWall from './beauty-refuge-front-wall.jpg';
 import backWall from './beauty-refuge-back-wall.jpg';
 import shampooStation from './beauty-refuge-shampoo-station.jpg';
 
-const images = [
+const items = [
   {
-    source: backWall,
+    src: frontWall,
+    altText: 'hair salon front wall',
+    caption: ''
   },
   {
-    source: frontWall,
+    src: backWall,
+    altText: 'hair salon back wall',
+    caption: ''
   },
   {
-    source: shampooStation,
+    src: shampooStation,
+    altText: 'hair salon shampoo station',
+    caption: ''
   },
 ];
 
-export default class Slideshow extends Component {
+class Slideshow extends Component {
   constructor(props) {
     super(props);
-    this.state = { loaded: false };
+    this.state = { activeIndex: 0 };
+    this.next = this.next.bind(this);
+    this.previous = this.previous.bind(this);
+    this.goToIndex = this.goToIndex.bind(this);
+    this.onExiting = this.onExiting.bind(this);
+    this.onExited = this.onExited.bind(this);
   }
-  componentDidMount() {
-    this.setState({
-      loaded: true,
-    });
+
+  onExiting() {
+    this.animating = true;
   }
+
+  onExited() {
+    this.animating = false;
+  }
+
+  next() {
+    if (this.animating) return;
+    const nextIndex =
+      this.state.activeIndex === items.length - 1
+        ? 0
+        : this.state.activeIndex + 1;
+    this.setState({ activeIndex: nextIndex });
+  }
+
+  previous() {
+    if (this.animating) return;
+    const nextIndex =
+      this.state.activeIndex === 0
+        ? items.length - 1
+        : this.state.activeIndex - 1;
+    this.setState({ activeIndex: nextIndex });
+  }
+
+  goToIndex(newIndex) {
+    if (this.animating) return;
+    this.setState({ activeIndex: newIndex });
+  }
+
   render() {
-    if (this.state.loaded) {
+    const { activeIndex } = this.state;
+
+    const slides = items.map((item) => {
       return (
-        <div className="slideshow">
-          <ReactGallery
-            inlineCarousel
-            withControls
-            source={images}
-            options={{ startSlideshow: false }}
-          />
-        </div>
+        <CarouselItem
+          onExiting={this.onExiting}
+          onExited={this.onExited}
+          key={item.src}
+        >
+          <img src={item.src} alt={item.altText} className="img-fluid" />
+          {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption} /> */}
+        </CarouselItem>
       );
-    } else {
-      return <div />;
-    }
+    });
+
+    return (
+      <div className="center-content">
+      <Carousel
+        activeIndex={activeIndex}
+        next={this.next}
+        previous={this.previous}
+        pause="hover"
+        interval={false}
+        className="slideshow-container"
+      >
+        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+        {slides}
+        <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
+        <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+      </Carousel>
+      </div>
+    );
   }
 }
+
+export default Slideshow;
