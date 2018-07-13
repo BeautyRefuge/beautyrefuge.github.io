@@ -6,13 +6,13 @@ import Iframe from '../components/Iframe';
 export default () => (
   <div>
     <Helmet
-      title="Contact - Beauty Refuge Salon - Oakbrook Terrace, IL"
+      title="Contact - Beauty Refuge Salon - Downers Grove, IL"
       meta={[
         {
           name: 'description',
           content:
             'Get in touch with Beauty Refuge for an appointment. This salon is located in ' +
-            'Oakbrook Terrace, IL and specializes in color, extensions, and styling.',
+            'Downers Grove, IL and specializes in color, extensions, and styling.',
         },
       ]}
     />

@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-import Slideshow from '../components/Slideshow';
+import Hero from '../components/Hero';
 import Expertise from '../components/Expertise';
 import Reviews from '../components/Reviews';
 
@@ -11,27 +11,27 @@ export default () => (
       <div className="col-md-6">
         <h2>Beauty Refuge</h2>
         <p>
-          A single chair suite, with rustic boho style and a comfortable
-          atmosphere.
+          Raquel Marie is a hair artist who loves what she does.
+          She goes by <a target="_blank" rel="noopener"
+            href="https://www.instagram.com/beauty.refuge/" style={{whiteSpace: 'nowrap'}}>
+            Beauty Refuge</a> and is currently operating out of Salon Sophia.
         </p>
-        <div style={{ margin: '20px 0' }}>
-          Beauty Refuge Salon<br />
-          1909 Meyers Rd, Suite 112<br />
-          Oakbrook Terrace, IL 60181<br />
-          (630) 600-8482 - texting preferred
-        </div>
-        <p>
+        <div style={{ margin: '20px 0' }}>​Salon Sophia<br />
+          132 Ogden Avenue<br />
+          Downers Grove, IL 60515<br />
           <a
             target="_blank"
             rel="noopener"
-            href="https://goo.gl/maps/GiwWPgfJjNP2"
+            href="https://goo.gl/maps/mCHB5TSGJsv"
           >
             Click here for Directions
           </a>
-        </p>
+        </div>
+        <p>Raquel's cell: (630) 600-8482 <br />
+          * texting preferred *</p>
       </div>
       <div className="col-lg-6">
-        <Slideshow />
+        <Hero />
       </div>
     </div>
 

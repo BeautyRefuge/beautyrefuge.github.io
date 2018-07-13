@@ -14,7 +14,7 @@ require('typeface-lato');
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Beauty Refuge - Full Service Salon - Oakbrook Terrace, IL"
+      title="Beauty Refuge - Full Service Salon - Downers Grove, IL"
       meta={[
         {
           name: 'description',

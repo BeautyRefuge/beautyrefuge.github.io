@@ -4,13 +4,13 @@ import Helmet from 'react-helmet';
 export default () => (
   <div style={{ maxWidth: '800px' }}>
     <Helmet
-      title="Services - Beauty Refuge Salon - Oakbrook Terrace, IL"
+      title="Services - Beauty Refuge Salon - Downers Grove, IL"
       meta={[
         {
           name: 'description',
           content:
             'Custom color, up-do styles, hair smoothing services, and more. Treat yourself ' +
-            'to an amazing experience at the Beauty Refuge salon in Oakbrook Terrace, IL.',
+            'to an amazing experience at the Beauty Refuge salon in Downers Grove, IL.',
         },
       ]}
     />
@@ -27,19 +27,19 @@ export default () => (
     <table className="table" style={{ maxWidth: '375px' }}>
       <tbody>
         <tr>
-          <td>Woman’s Haircut and Blow-dry</td>
+          <td>Women's Haircut and Blow-dry</td>
           <td>$45</td>
         </tr>
         <tr>
-          <td>Woman’s Haircut</td>
+          <td>Women's Haircut</td>
           <td>$35</td>
         </tr>
         <tr>
-          <td>Men’s Haircut</td>
+          <td>Men's Haircut</td>
           <td>$30</td>
         </tr>
         <tr>
-          <td>Children’s Haircut</td>
+          <td>Children's Haircut</td>
           <td>$20</td>
         </tr>
         <tr>

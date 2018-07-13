@@ -13,7 +13,7 @@ const isMobile =
 export default () => (
   <div style={{ minHeight: '400px' }}>
     <Helmet
-      title="Book Appointment - Beauty Refuge Salon - Oakbrook Terrace, IL"
+      title="Book Appointment - Beauty Refuge Salon - Downers Grove, IL"
       meta={[
         {
           name: 'description',

@@ -11,7 +11,7 @@ export default class Expertise extends Component {
     return (
       <div className="row" style={{ margin: '40px 0' }}>
         <div className="col-lg-3">
-          <h2>Our Expertise</h2>
+          <h2>Expertise</h2>
           <p>
             Beauty Refuge specializes in color, extensions, and styling. Our
             services include balayage, foil highlighting, color correction and

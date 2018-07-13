@@ -6,7 +6,7 @@ import InstagramButton from '../components/InstagramButton';
 export default () => (
   <div className="page-gallery" style={{ minHeight: '400px' }}>
     <Helmet
-      title="Gallery - Beauty Refuge Salon - Oakbrook Terrace, IL"
+      title="Gallery - Beauty Refuge Salon - Downers Grove, IL"
       meta={[
         {
           name: 'description',

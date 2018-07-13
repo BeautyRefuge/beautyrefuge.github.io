@@ -7,16 +7,14 @@ const address = (
   <div>
     <h2>Address</h2>
     <div style={{ marginBottom: '20px' }}>
-      Beauty Refuge Salon<br />
-      1909 Meyers Rd, Suite 112<br />
-      Oakbrook Terrace, IL 60181<br />
-      (630) 600-8482 - texting preferred
-    </div>
-    <p>
-      <a target="_blank" rel="noopener" href="https://goo.gl/maps/GiwWPgfJjNP2">
+      Salon Sophia<br />
+      132 Ogden Avenue<br />
+      Downers Grove, IL 60515<br />
+      <a target="_blank" rel="noopener" href="https://goo.gl/maps/mCHB5TSGJsv">
         Click here for Directions
       </a>
-    </p>
+    </div>
+    <p>Raquel's cell: (630) 600-8482 <br/>* texting preferred *</p>
   </div>
 );
 
