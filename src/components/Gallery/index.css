@@ -1,4 +1,5 @@
 .gallery {
+  color: #fff;
   min-height: 350px;
 }
 .gallery .react-blueimp-thumbnails {
