@@ -1,5 +1,6 @@
 exports.onClientEntry = () => {
-  require('core-js/fn/object/assign');
+  // TODO: figure out this polyfill
+  // require('core-js/features/object/assign');
 
   // source: https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent
   (function() {

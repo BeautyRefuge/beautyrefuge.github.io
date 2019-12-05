@@ -11,20 +11,20 @@
     "url": "git+https://github.com/BeautyRefuge/beautyrefuge.github.io.git"
   },
   "dependencies": {
-    "axios": "0.18.0",
+    "axios": "0.19.0",
     "better-react-spinkit": "2.0.4",
-    "bootstrap": "^4.1.3",
-    "core-js": "^2.5.7",
-    "gatsby": "^1.9.277",
-    "gatsby-link": "^1.6.46",
-    "gatsby-plugin-google-analytics": "^1.0.31",
-    "gatsby-plugin-react-helmet": "^2.0.11",
-    "gatsby-plugin-react-next": "1.0.11",
-    "react-helmet": "^5.2.0",
+    "bootstrap": "4.4.1",
+    "core-js": "3.4.7",
+    "gatsby": "^2.18.7",
+    "gatsby-plugin-google-analytics": "2.1.29",
+    "gatsby-plugin-react-helmet": "^3.1.16",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-helmet": "^5.2.1",
     "reactive-blueimp-gallery": "0.2.0",
-    "reactstrap": "^6.4.0",
-    "typeface-lato": "0.0.54",
-    "typeface-montserrat": "0.0.54"
+    "reactstrap": "^8.2.0",
+    "typeface-lato": "0.0.75",
+    "typeface-montserrat": "0.0.75"
   },
   "license": "MIT",
   "main": "n/a",
@@ -36,7 +36,7 @@
     "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "devDependencies": {
-    "gh-pages": "1.2.0",
-    "prettier": "^1.14.2"
+    "gh-pages": "2.1.1",
+    "prettier": "^1.19.1"
   }
 }

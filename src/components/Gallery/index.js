@@ -2,13 +2,11 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import getPhotos from './get-photos';
 import LoadingSpinner from '../LoadingSpinner';
-
-let ReactGallery;
-if (typeof window !== 'undefined') {
-  ReactGallery = require('reactive-blueimp-gallery').default;
-}
-
 import './index.css';
+
+const ReactGalleryClientSideOnlyLazy = React.lazy(() =>
+  import('reactive-blueimp-gallery')
+)
 
 export default class Gallery extends Component {
   constructor(props) {
@@ -60,16 +58,16 @@ export default class Gallery extends Component {
   render() {
     if (this.state.loaded) {
       return (
-        <div className="gallery">
-          <ReactGallery withControls source={this.state.photos} />
-        </div>
+        <React.Suspense fallback={<LoadingSpinner />}>
+          <div className="gallery">
+            <ReactGalleryClientSideOnlyLazy withControls source={this.state.photos} />
+          </div>
+        </React.Suspense>
       );
     } else {
       return (
-        <div>
-          <LoadingSpinner />
-        </div>
-      );
+        <LoadingSpinner />
+      )
     }
   }
 }
