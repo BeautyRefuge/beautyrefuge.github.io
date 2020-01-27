@@ -1,17 +1,17 @@
 import React from 'react';
 
-import './index.css';
-import Instagram from './instagram';
+import InstagramIcon from './instagramIcon';
 
-const InstagramButton = () => (
+const InstagramButton = (props) => (
   <a
+    href="https://www.instagram.com/beauty.refuge/"
     target="_blank"
     rel="noopener noreferrer"
-    className="btn btn-primary btn-instagram"
-    href="https://www.instagram.com/beauty.refuge/"
+    className={`inline-flex items-center bg-pink-dark rounded
+      text-white p-3 hover:bg-pink hover:text-coolgray ${props.className}`}
   >
-    <Instagram />
-    <span>Follow on Instagram</span>
+    <InstagramIcon className="fill-current w-8 h-8 mr-1 -ml-1" />
+    <span className="uppercase font-normal text-sm tracking-wider">Follow on Instagram</span>
   </a>
 )
 

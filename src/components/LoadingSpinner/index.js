@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Circle } from 'better-react-spinkit';
 
-import './index.css';
-
 export default class LoadingSpinner extends Component {
   constructor(props) {
     super(props);
@@ -16,7 +14,7 @@ export default class LoadingSpinner extends Component {
   render() {
     if (this.state.loaded) {
       return (
-        <div className="spinner">
+        <div className="flex justify-center m-5">
           <Circle color="#ed8c8c" size={50} />
         </div>
       );

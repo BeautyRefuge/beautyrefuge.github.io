@@ -60,7 +60,8 @@ export default class Gallery extends Component {
       return (
         <React.Suspense fallback={<LoadingSpinner />}>
           <div className="gallery">
-            <ReactGalleryClientSideOnlyLazy withControls source={this.state.photos} />
+            <ReactGalleryClientSideOnlyLazy withControls source={this.state.photos}
+              className="flex flex-wrap flex-row " />
           </div>
         </React.Suspense>
       );

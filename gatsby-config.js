@@ -3,6 +3,7 @@ module.exports = {
     title: 'Gatsby Default Starter',
   },
   plugins: [
+    'gatsby-plugin-postcss',
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-google-analytics`,

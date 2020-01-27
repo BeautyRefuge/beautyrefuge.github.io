@@ -1,15 +1,13 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import { Navbar } from 'reactstrap';
 
-import './index.css';
 import logoSmall from './beauty-refuge-logo-71w.png';
 import logoLarge from './beauty-refuge-logo-142w.png';
 
 const Header = () => (
-  <Navbar light expand="md" className="fixed-top">
-    <div className="container">
-      <Link to="/" className="navbar-brand">
+  <header className="w-full bg-pink">
+    <div className="w-full container py-2">
+      <Link to="/">
         <img
           width="71"
           height="46"
@@ -19,7 +17,7 @@ const Header = () => (
         />
       </Link>
     </div>
-  </Navbar>
+  </header>
 )
 
 export default Header;

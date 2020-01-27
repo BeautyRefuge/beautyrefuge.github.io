@@ -1,16 +1,7 @@
-import React, { Component } from 'react';
-import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators
-} from 'reactstrap';
-
-import './index.css';
+import React from 'react';
 
 const items = [
   {
-    key: 1,
     name: 'Liz S.',
     location: 'Bolingbrook, IL',
     review: `Not only is Raquel an accomplished stylist, but also a genuine person. Her technique
@@ -19,7 +10,6 @@ const items = [
       when it comes to new styles and beauty!!`,
   },
   {
-    key: 2,
     name: 'Elizabeth F.',
     location: 'Naperville, IL',
     review: `Raquel is talented at visualizing the perfect design and skilled at knowing how to
@@ -28,7 +18,6 @@ const items = [
       me because I get so many compliments on my hair.`,
   },
   {
-    key: 3,
     name: 'Rachel M.',
     location: 'Naperville, IL',
     review: `I have been blessed to have Raquel as a hair stylist for a couple years now. She is
@@ -37,7 +26,6 @@ const items = [
       are great for the amazing work she offers.`,
   },
   {
-    key: 4,
     name: 'Elizabeth M.',
     location: 'La Grange, IL',
     review: `I have gone to many different hair dressers, and at first I start to think, I found
@@ -46,7 +34,6 @@ const items = [
     short of genius!!!!!`,
   },
   {
-    key: 5,
     name: 'Sarah A.',
     location: 'Romeoville, IL',
     review: `Hands down the best hairdresser, or should I say, hair scientist! She goes above
@@ -56,103 +43,28 @@ const items = [
   },
 ];
 
-class Reviews extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { activeIndex: 0 };
-    this.next = this.next.bind(this);
-    this.previous = this.previous.bind(this);
-    this.goToIndex = this.goToIndex.bind(this);
-    this.onExiting = this.onExiting.bind(this);
-    this.onExited = this.onExited.bind(this);
-  }
-
-  onExiting() {
-    this.animating = true;
-  }
-
-  onExited() {
-    this.animating = false;
-  }
-
-  next() {
-    if (this.animating) return;
-    const nextIndex =
-      this.state.activeIndex === items.length - 1
-        ? 0
-        : this.state.activeIndex + 1;
-    this.setState({ activeIndex: nextIndex });
-  }
-
-  previous() {
-    if (this.animating) return;
-    const nextIndex =
-      this.state.activeIndex === 0
-        ? items.length - 1
-        : this.state.activeIndex - 1;
-    this.setState({ activeIndex: nextIndex });
-  }
-
-  goToIndex(newIndex) {
-    if (this.animating) return;
-    this.setState({ activeIndex: newIndex });
-  }
-
-  render() {
-    const { activeIndex } = this.state;
-
-    const slides = items.map(item => {
-      return (
-        <CarouselItem
-          onExiting={this.onExiting}
-          onExited={this.onExited}
-          key={item.key}
-        >
-          <div className="review">
-            <p>
-              {item.name}
-              <br />
-              {item.location}
-            </p>
-
-            <blockquote>
-              <p>{item.review}</p>
-            </blockquote>
-          </div>
-        </CarouselItem>
-      );
-    });
-
+const Reviews = () => {
+  const reviews = items.map((item, i) => {
     return (
-      <div className="reviews-container">
-        <h2>Client Reviews</h2>
-        <Carousel
-          activeIndex={activeIndex}
-          next={this.next}
-          previous={this.previous}
-          pause="hover"
-          interval={false}
-        >
-          <CarouselIndicators
-            items={items}
-            activeIndex={activeIndex}
-            onClickHandler={this.goToIndex}
-          />
-          {slides}
-          <CarouselControl
-            direction="prev"
-            directionText="Previous"
-            onClickHandler={this.previous}
-          />
-          <CarouselControl
-            direction="next"
-            directionText="Next"
-            onClickHandler={this.next}
-          />
-        </Carousel>
+      <div className="mb-10">
+      <blockquote key={i}
+        className="relative p-4 border-l-4 text-lg leading-relaxed lg:text-xl">
+        <p className="mb-2">&#8220;{item.review}&#8221;</p>
+        <p className="my-3 lg:my-5">
+          {item.name}<br />
+          {item.location}
+        </p>
+      </blockquote>
       </div>
-    );
-  }
+    )
+  })
+
+  return (
+    <div className="mt-10 lg:mt-20">
+      <h2 className="font-heading font-light text-3xl my-6 text-coolgray">Client Reviews</h2>
+      {reviews}
+    </div>
+  )
 }
 
 export default Reviews;

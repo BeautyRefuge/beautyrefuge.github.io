@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 
 import 'typeface-montserrat';
 import 'typeface-lato';
-import 'bootstrap/dist/css/bootstrap.css';
 
 import Header from '../Header';
 import './index.css';
@@ -17,7 +16,7 @@ const TemplateWrapper = ({ children }) => (
       <meta name="description" content="Hair design and color services in the Chicagoland area." />
     </Helmet>
     <Header />
-    <div className="container">{children}</div>
+    <div className="container font-body font-light text-gray-800">{children}</div>
   </div>
 );
 
